@@ -1,0 +1,9 @@
+-index.php
+-config/
+-data/
+-inc/
+-assets/
+    -css/
+    -js/
+    -img/
+-admin/
