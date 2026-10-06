@@ -1,3 +1,3 @@
 <?php
 
-$base_url = '/parcial_pw';
+$base_url = '/parcial_pw';  
