@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.producto img {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+
+input,
+select,
+textarea,
+button {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.admin {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #222;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 10px 0;
+}
+
+.contenido-admin {
+    flex: 1;
+    padding: 30px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+}
