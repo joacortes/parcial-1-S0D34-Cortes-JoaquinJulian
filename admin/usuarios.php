@@ -1,3 +1,7 @@
+<?php
+require_once 'inc/header.php';
+require_once 'inc/sidebar.php';
+?>
 <h1>Usuarios</h1>
 
 <form>
@@ -38,3 +42,7 @@
         </td>
     </tr>
 </table>
+
+<?php
+require_once 'inc/footer.php';
+?>

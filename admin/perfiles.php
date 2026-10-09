@@ -1,3 +1,9 @@
+
+<?php
+require_once 'inc/header.php';
+require_once 'inc/sidebar.php';
+?>
+
 <h1>Perfiles</h1>
 
 <form>
@@ -13,3 +19,8 @@
     <label><input type="checkbox">Perfiles</label>
     <button type="submit">Guardar</button>
 </form>
+
+<?php
+require_once 'inc/footer.php';
+
+?>

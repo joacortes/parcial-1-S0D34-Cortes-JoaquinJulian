@@ -1,3 +1,10 @@
+<?php
+
+require_once 'inc/header.php';
+require_once 'inc/sidebar.php';
+
+?>
+
 <h1>Comentarios</h1>
 
 <label for="estado">Estado</label>
@@ -27,3 +34,7 @@
         </td>
     </tr>
 </table>
+
+<?php
+require_once 'inc/footer.php';
+?>

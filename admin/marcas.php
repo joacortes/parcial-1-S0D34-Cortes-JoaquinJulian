@@ -1,5 +1,11 @@
-<h1>Marcas</h1>
+<?php
 
+require_once 'inc/header.php';
+require_once 'inc/sidebar.php';
+
+?>
+
+<h1>Marcas</h1>
 <form>
     <label for="nombre">Nombre</label>
     <input type="text" id="nombre" required>
@@ -22,3 +28,8 @@
         </tr>
     </table>
 </form>
+
+<?php
+
+require_once 'inc/footer.php';
+?>
