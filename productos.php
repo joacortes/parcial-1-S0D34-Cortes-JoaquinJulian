@@ -14,7 +14,15 @@ if(isset($_GET['categoria'])){
     $categoriaSeleccionada = $_GET['categoria'];
 }
 
+$ordenSeleccionado = '';
+
+if (isset($_GET['orden'])) {
+    $ordenSeleccionado = $_GET['orden'];
+}
+
 $productosFiltrados = [];
+
+
 
 foreach($productos as $producto){
     $mostrar = true;
@@ -37,6 +45,24 @@ foreach($productos as $producto){
 
     if($mostrar == true){
         $productosFiltrados[] = $producto;
+    }
+
+    if($ordenSeleccionado == 'az'){
+        usort($productosFiltrados, function ($a, $b) {
+            return strcmp($a['nombre'], $b['nombre']);
+        });
+    }
+
+    if($ordenSeleccionado == 'za'){
+        usort($productosFiltrados, function ($a, $b) {
+            return strcmp($b['nombre'], $a['nombre']);
+        });
+    }
+
+    if($ordenSeleccionado == 'ranking'){
+        usort($productosFiltrados, function ($a, $b) {
+            return $b['ranking'] - $a['ranking'];
+        });
     }
 }
 
